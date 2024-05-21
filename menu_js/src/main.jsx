@@ -8,6 +8,9 @@
 // npm install @mui/material @emotion/react @emotion/styled
 // npm install @fontsource/roboto
 // npm install @mui/icons-material
+// npm install react-transition-group --save
+// npm i bootstrap@5.3.2
+
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
