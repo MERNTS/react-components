@@ -1,17 +1,27 @@
-import { useState } from 'react'
+import { useReducer } from 'react';
 
-function App() {
-  const [count, setCount] = useState(100);
-  const increment = () =>{
-      setCount(count + 1);
-  }
-
-  return (
-    <>
-        <p>Count: {count}</p>
-        <button onClick={increment}>Incrementing</button>
-    </>
-  )
+function countReducer(state, action) {
+    switch (action.type) {
+        case 'increment':
+            return { count: state.count + 1 };
+        default:
+            throw new Error(`Unknown action type: ${action.type}`);
+    }
 }
 
-export default App
+function App() {
+    const [state, dispatch] = useReducer(countReducer, { count: 100 });
+
+    const increment = () => {
+        dispatch({ type: 'increment' });
+    };
+
+    return (
+        <>
+            <p>Count: {state.count}</p>
+            <button onClick={increment}>Incrementing</button>
+        </>
+    );
+}
+
+export default App;
