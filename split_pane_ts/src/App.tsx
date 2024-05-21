@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 import cn from 'classnames'
 
 const App: FC = () => {
-  const [width, setWidth] = useState(280)
+  const [width] = useState(280)
 
   return (
       <div className={styles.container}>
