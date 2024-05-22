@@ -13,7 +13,7 @@ function FullPage({ sideMenu, pageHeader , children }) {
             </Box>
 
             <Box className='d-flex overflow-hidden position-relative flex-grow-1'>
-                <Box className="d-flex flex-column overflow-auto p-0 m-0 position-relative flex-grow-1 flex-nowrap">
+                <Box className="d-flex flex-column p-0 m-0 position-relative flex-grow-1 flex-nowrap">
                     <Box
                         className="w-100 p-3 border-bottom"
                         sx={{ height: 68 }}
@@ -25,6 +25,13 @@ function FullPage({ sideMenu, pageHeader , children }) {
                     </Box>
                 </Box>
             </Box>
+
+            <Box className='h-100'>
+                {
+                    sideMenu
+                }
+            </Box>
+
         </Paper>
     )
 }

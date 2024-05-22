@@ -1,11 +1,11 @@
-import SideMenuTest from "./SideMenuTest";
+import SideMenuLeft from "./SMenu/SideMenuLeft.jsx";
 import SideMenuProvider from "./SMenu/SideMenuProvider";
-import sideMenuConfigData from "./menuData";
+import sideMenuConfigData from "./SMenu/SideMenuData.jsx";
 
 function App() {
     return (
         <SideMenuProvider menuData={sideMenuConfigData}>
-            <SideMenuTest />
+            <SideMenuLeft />
         </SideMenuProvider>
     )
 }

@@ -1,4 +1,4 @@
-// SideMenu.jsx
+// SideMenu_Del.jsx
 
 import Box from '@mui/system/Box';
 import SideMenuItem from './_SideMenuItem.jsx';
@@ -13,7 +13,7 @@ import SideMenuHeader from "./_SideMenuHeader";
  *
  * @returns
  */
-function SideMenu({
+function SideMenu_Del({
                       title,
                       logo,
                       hClick,
@@ -89,4 +89,4 @@ function SideMenu({
     );
 }
 
-export default SideMenu;
+export default SideMenu_Del;
